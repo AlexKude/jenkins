@@ -16,5 +16,10 @@ pipeline {
                               sh 'ssh root@jenkins_host \'hostname\''
                               }
                          }
+          stage("Second_Step") {
+                      steps {
+                              sh 'ssh root@jenkins_host \'uptime\''
+                              }
+                         }
         }
 }
