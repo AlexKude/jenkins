@@ -11,7 +11,7 @@ pipeline {
               timestamps()
   }
   stages {
-          stage("Preparations") {
+          stage("First_Step") {
                       steps {
                               sh 'ssh root@jenkins_host \'hostname\''
                               }
